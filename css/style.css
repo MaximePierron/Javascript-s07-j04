@@ -1,0 +1,316 @@
+/*------------------------------------
+  Background Image Style
+------------------------------------*/
+.bg-img-hero {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+.bg-img-hero-bottom {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom center;
+}
+
+.bg-img-hero-center {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+/*------------------------------------
+  Background Gradients
+------------------------------------*/
+.gradient-half-primary-v1 {
+  background-image: linear-gradient(25deg, #796eff 0%, #21c87a 100%);
+  background-repeat: repeat-x;
+}
+
+.gradient-half-purple-v1 {
+  background-image: linear-gradient(35deg, #796eff 45%, #1c6be1 100%);
+  background-repeat: repeat-x;
+}
+
+/*------------------------------------
+  Background Overlay Gradients
+------------------------------------*/
+[class*="gradient-overlay-half"] {
+  position: relative;
+  z-index: 1;
+}
+
+[class*="gradient-overlay-half"]::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  content: "";
+}
+
+.gradient-overlay-half-dark-video-v1::before {
+  z-index: 2;
+  background-color: rgba(21, 27, 38, 0.95);
+}
+
+.gradient-overlay-half-white-v1::before {
+  background-image: linear-gradient(60deg, rgba(255, 255, 255, 0.99) 30%, transparent 60%);
+  background-repeat: repeat-x;
+}
+
+.gradient-overlay-half-dark-v1::before {
+  background-image: linear-gradient(30deg, rgba(21, 27, 38, 0.5) 0%, transparent 100%);
+  background-repeat: repeat-x;
+}
+
+.gradient-overlay-half-dark-v2::before {
+  background-image: linear-gradient(0deg, rgba(21, 27, 38, 0.8) 0%, transparent 100%);
+  background-repeat: repeat-x;
+}
+
+.gradient-overlay-half-dark-v3::before {
+  background-image: linear-gradient(0deg, transparent 0%, rgba(21, 27, 38, 0.9) 100%);
+  background-repeat: repeat-x;
+}
+
+.gradient-overlay-half-dark-v4::before {
+  background-image: linear-gradient(150deg, rgba(21, 27, 38, 0.9) 10%, #151b26 50%);
+  background-repeat: repeat-x;
+}
+
+.gradient-overlay-half-primary-v1::before {
+  background-image: linear-gradient(30deg, rgba(121, 110, 255, 0.95) 0%, rgba(33, 200, 122, 0.95) 100%);
+  background-repeat: repeat-x;
+}
+
+.gradient-overlay-half-purple-v1::before {
+  background-image: linear-gradient(180deg, rgba(121, 110, 255, 0.35) 10%, #796eff 70%);
+  background-repeat: repeat-x;
+}
+
+.gradient-overlay-half-purple-v2::before {
+  background-image: linear-gradient(150deg, rgba(121, 110, 255, 0.9) 10%, #796eff 50%);
+  background-repeat: repeat-x;
+}
+
+/*------------------------------------
+  Separation line in card list
+------------------------------------*/
+
+.border-bottom { border-bottom: 1px solid #839496; }
+
+/*------------------------------------
+  Blurred bg image
+------------------------------------*/
+
+.bg-image {
+
+  /* Add the blur effect */
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/*------------------------------------
+  Forms
+------------------------------------*/
+
+.form-signin {
+  width: 100%;
+  max-width: 480px;
+  margin: auto;
+}
+
+/*------------------------------------
+  Buttons Bootstrap Style
+------------------------------------*/
+/* facebook */
+.btn-facebook {
+  color: #fff;
+  background-color: #3b5998;
+  border-color: #3b5998;
+}
+
+.btn-facebook:hover {
+  color: #fff;
+  background-color: #30497c;
+  border-color: #2d4373;
+}
+
+.btn-facebook:focus, .btn-facebook.focus {
+  box-shadow: 0 0 0 0.2rem rgba(59, 89, 152, 0.5);
+}
+
+.btn-facebook.disabled, .btn-facebook:disabled {
+  color: #fff;
+  background-color: #3b5998;
+  border-color: #3b5998;
+}
+
+.btn-facebook:not(:disabled):not(.disabled):active, .btn-facebook:not(:disabled):not(.disabled).active,
+.show > .btn-facebook.dropdown-toggle {
+  color: #fff;
+  background-color: #2d4373;
+  border-color: #293e6a;
+}
+
+.btn-facebook:not(:disabled):not(.disabled):active:focus, .btn-facebook:not(:disabled):not(.disabled).active:focus,
+.show > .btn-facebook.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(59, 89, 152, 0.5);
+}
+
+/* google */
+.btn-google {
+  color: #fff;
+  background-color: #d14130;
+  border-color: #d14130;
+}
+
+.btn-google:hover {
+  color: #fff;
+  background-color: #b33628;
+  border-color: #a93325;
+}
+
+.btn-google:focus, .btn-google.focus {
+  box-shadow: 0 0 0 0.2rem rgba(209, 65, 48, 0.5);
+}
+
+.btn-google.disabled, .btn-google:disabled {
+  color: #fff;
+  background-color: #d14130;
+  border-color: #d14130;
+}
+
+.btn-google:not(:disabled):not(.disabled):active, .btn-google:not(:disabled):not(.disabled).active,
+.show > .btn-google.dropdown-toggle {
+  color: #fff;
+  background-color: #a93325;
+  border-color: #9e3023;
+}
+
+.btn-google:not(:disabled):not(.disabled):active:focus, .btn-google:not(:disabled):not(.disabled).active:focus,
+.show > .btn-google.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(209, 65, 48, 0.5);
+}
+
+/* twitter */
+.btn-twitter {
+  color: #fff;
+  background-color: #1da1f2;
+  border-color: #1da1f2;
+}
+
+.btn-twitter:hover {
+  color: #fff;
+  background-color: #0d8ddc;
+  border-color: #0c85d0;
+}
+
+.btn-twitter:focus, .btn-twitter.focus {
+  box-shadow: 0 0 0 0.2rem rgba(29, 161, 242, 0.5);
+}
+
+.btn-twitter.disabled, .btn-twitter:disabled {
+  color: #fff;
+  background-color: #1da1f2;
+  border-color: #1da1f2;
+}
+
+.btn-twitter:not(:disabled):not(.disabled):active, .btn-twitter:not(:disabled):not(.disabled).active,
+.show > .btn-twitter.dropdown-toggle {
+  color: #fff;
+  background-color: #0c85d0;
+  border-color: #0b7ec4;
+}
+
+.btn-twitter:not(:disabled):not(.disabled):active:focus, .btn-twitter:not(:disabled):not(.disabled).active:focus,
+.show > .btn-twitter.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(29, 161, 242, 0.5);
+}
+
+/* instagram */
+.btn-instagram {
+  color: #fff;
+  background-color: #3f729b;
+  border-color: #3f729b;
+}
+
+.btn-instagram:hover {
+  color: #fff;
+  background-color: #345e80;
+  border-color: #305777;
+}
+
+.btn-instagram:focus, .btn-instagram.focus {
+  box-shadow: 0 0 0 0.2rem rgba(63, 114, 155, 0.5);
+}
+
+.btn-instagram.disabled, .btn-instagram:disabled {
+  color: #fff;
+  background-color: #3f729b;
+  border-color: #3f729b;
+}
+
+.btn-instagram:not(:disabled):not(.disabled):active, .btn-instagram:not(:disabled):not(.disabled).active,
+.show > .btn-instagram.dropdown-toggle {
+  color: #fff;
+  background-color: #305777;
+  border-color: #2d516e;
+}
+
+.btn-instagram:not(:disabled):not(.disabled):active:focus, .btn-instagram:not(:disabled):not(.disabled).active:focus,
+.show > .btn-instagram.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(63, 114, 155, 0.5);
+}
+
+/* github */
+.btn-github {
+  color: #fff;
+  background-color: #24292e;
+  border-color: #24292e;
+}
+
+.btn-github:hover {
+  color: #fff;
+  background-color: #131619;
+  border-color: #0e1011;
+}
+
+.btn-github:focus, .btn-github.focus {
+  box-shadow: 0 0 0 0.2rem rgba(36, 41, 46, 0.5);
+}
+
+.btn-github.disabled, .btn-github:disabled {
+  color: #fff;
+  background-color: #24292e;
+  border-color: #24292e;
+}
+
+.btn-github:not(:disabled):not(.disabled):active, .btn-github:not(:disabled):not(.disabled).active,
+.show > .btn-github.dropdown-toggle {
+  color: #fff;
+  background-color: #0e1011;
+  border-color: #08090a;
+}
+
+.btn-github:not(:disabled):not(.disabled):active:focus, .btn-github:not(:disabled):not(.disabled).active:focus,
+.show > .btn-github.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(36, 41, 46, 0.5);
+}
+
+
+
+
+
