@@ -11,7 +11,7 @@ $(document).ready(function() {
             return "on s'fait une partie soum-soum ?";
         } else if (question === ""){
             return "t'es en PLS ?";
-        } else if (question.toLowerCase.includes("j'en ai marre")){
+        } else if (question.toLowerCase().includes("j'en ai marre")){
             seum = 1;
             return "Vazy j'me pète la tchave, tu m'as saoulé !";            
         } else {
